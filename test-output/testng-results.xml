@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="8" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="NewtoursAutomationMavenSuite" duration-ms="94475" started-at="2020-03-13T18:55:19Z" finished-at="2020-03-13T18:56:53Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="94475" started-at="2020-03-13T18:55:19Z" finished-at="2020-03-13T18:56:53Z">
+      <class name="com.bitm.NewtoursAutomationMaven.Test.FlightBookTest">
+        <test-method status="FAIL" signature="checkFlightBookPageTitle()[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.FlightBookTest@29ee9faa]" name="checkFlightBookPageTitle" duration-ms="10118" started-at="2020-03-14T00:56:20Z" finished-at="2020-03-14T00:56:30Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //body//b//input[2] (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //body//b//input[2] (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.bitm.NewtoursAutomationMaven.Test.FlightBookTest.checkFlightBookPageTitle(FlightBookTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //body//b//input[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ITCH5MF', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 15276, moz:profile: C:\Users\moham\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11f41c03-34f0-4f80-bb7a-4be4e8bb93cf
+*** Element info: {Using=xpath, value=//body//b//input[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlightBookPageTitle -->
+        <test-method status="PASS" signature="flightBookTest(java.util.List)[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.FlightBookTest@29ee9faa]" name="flightBookTest" duration-ms="22906" started-at="2020-03-14T00:56:30Z" data-provider="ImranBookdata" finished-at="2020-03-14T00:56:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[FlighBookDTO [fname=[imran ], lname=[alam], meal=[Bland], ccard=Visa, number=123456789, edate=03, eyear=2019, frstname=imran , midname=alam, lastname=sqa, billadd=1325Dhaka, city=Dhaka, state=Dhaka, postalcode=P4370, country=Bangladesh, deladd=1325 Chittagong, delcity=CTG, delstate=Dubai, delpost=P4370, delcountry=Bangladesh], FlighBookDTO [fname=[rony], lname=[das], meal=[Muslim], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null], FlighBookDTO [fname=[], lname=[], meal=[], ccard=null, number=null, edate=null, eyear=null, frstname=null, midname=null, lastname=null, billadd=null, city=null, state=null, postalcode=null, country=null, deladd=null, delcity=null, delstate=null, delpost=null, delcountry=null]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightBookTest -->
+      </class> <!-- com.bitm.NewtoursAutomationMaven.Test.FlightBookTest -->
+      <class name="com.bitm.NewtoursAutomationMaven.Test.FlightFinderTest">
+        <test-method status="PASS" signature="checkFlightFinderTitle()[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.FlightFinderTest@4678c730]" name="checkFlightFinderTitle" duration-ms="186" started-at="2020-03-14T00:56:13Z" finished-at="2020-03-14T00:56:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlightFinderTitle -->
+        <test-method status="PASS" signature="flightFinderTest(java.util.List)[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.FlightFinderTest@4678c730]" name="flightFinderTest" duration-ms="2283" started-at="2020-03-14T00:56:13Z" data-provider="Imrandata" depends-on-methods="com.bitm.NewtoursAutomationMaven.Test.FlightFinderTest.checkFlightFinderTitle" finished-at="2020-03-14T00:56:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[FlightFinderDTO [passengers=2, departing=Frankfurt, month=6, day=8, arriving=London, rmonth=8, rday=10, airline=Blue Skies Airlines]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightFinderTest -->
+      </class> <!-- com.bitm.NewtoursAutomationMaven.Test.FlightFinderTest -->
+      <class name="com.bitm.NewtoursAutomationMaven.Test.LoginTest">
+        <test-method status="PASS" signature="checkloginpageTitle()[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.LoginTest@5c7fa833]" name="checkloginpageTitle" duration-ms="25948" started-at="2020-03-14T00:55:19Z" finished-at="2020-03-14T00:55:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkloginpageTitle -->
+        <test-method status="PASS" signature="loginTest(java.util.List)[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.LoginTest@5c7fa833]" name="loginTest" duration-ms="25748" started-at="2020-03-14T00:55:47Z" data-provider="loginData" depends-on-methods="com.bitm.NewtoursAutomationMaven.Test.LoginTest.checkloginpageTitle" finished-at="2020-03-14T00:56:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[LoginDTO [username=tutorial, password=tutorial]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.bitm.NewtoursAutomationMaven.Test.LoginTest -->
+      <class name="com.bitm.NewtoursAutomationMaven.Test.FlightSelection">
+        <test-method status="PASS" signature="checkFlightSelectionPageTitle()[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.FlightSelection@6767c1fc]" name="checkFlightSelectionPageTitle" duration-ms="79" started-at="2020-03-14T00:56:15Z" finished-at="2020-03-14T00:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlightSelectionPageTitle -->
+        <test-method status="PASS" signature="FlightSelectionTest()[pri:0, instance:com.bitm.NewtoursAutomationMaven.Test.FlightSelection@6767c1fc]" name="FlightSelectionTest" duration-ms="4746" started-at="2020-03-14T00:56:15Z" depends-on-methods="com.bitm.NewtoursAutomationMaven.Test.FlightSelection.checkFlightSelectionPageTitle" finished-at="2020-03-14T00:56:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightSelectionTest -->
+      </class> <!-- com.bitm.NewtoursAutomationMaven.Test.FlightSelection -->
+    </test> <!-- Login Test -->
+  </suite> <!-- NewtoursAutomationMavenSuite -->
+</testng-results>

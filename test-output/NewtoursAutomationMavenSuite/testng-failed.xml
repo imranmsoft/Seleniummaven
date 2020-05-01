@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NewtoursAutomationMavenSuite]">
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="com.bitm.NewtoursAutomationMaven.Test.FlightBookTest">
+        <methods>
+          <include name="checkFlightBookPageTitle"/>
+        </methods>
+      </class> <!-- com.bitm.NewtoursAutomationMaven.Test.FlightBookTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [NewtoursAutomationMavenSuite] -->

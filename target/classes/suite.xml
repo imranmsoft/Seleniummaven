@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "NewtoursAutomationMavenSuite">
+
+   <test name = "Login Test">
+      <classes>
+         <class name = "com.bitm.NewtoursAutomationMaven.Test.LoginTest" />
+         <class name= "com.bitm.NewtoursAutomationMaven.Test.FlightFinderTest" />
+         <class name= "com.bitm.NewtoursAutomationMaven.Test.FlightSelection" />
+         <class name= "com.bitm.NewtoursAutomationMaven.Test.FlightBookTest" />
+         
+         
+      </classes>
+   </test>
+   
+  
+ 
+  
+</suite>  	
