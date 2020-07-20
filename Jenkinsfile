@@ -3,8 +3,10 @@ pipeline {
 
     stages {
         stage('Hello') {
+            def mvnhome=tool name: 'maven-3', type: 'maven'
             steps {
-                echo 'Hello World'
+                
+                sh ${mvnhome}/bin/mvn package
             }
         }
     }
