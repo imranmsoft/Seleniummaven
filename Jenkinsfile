@@ -3,11 +3,11 @@ pipeline {
 
     stages {
         stage('Hello') {
-            
+           
             steps {
+               /usr/share/maven/bin/mvn package 
                 
-                echo "Hello WOrld"
-            }
+                         }
         }
     }
 }
