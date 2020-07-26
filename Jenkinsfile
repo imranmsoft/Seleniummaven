@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
            
             steps {
-               /usr/share/maven/bin/mvn -version 
+               /usr/share/maven/bin/mvn -version
                 
                          }
         }
